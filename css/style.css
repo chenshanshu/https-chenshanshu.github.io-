@@ -31,7 +31,7 @@ body {
 	height: 100%;
 	width: auto;
 }
-#wrapper {max-width: 700px; margin: 60px auto 30px; padding:60px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.1); position: relative;}
+#wrapper {max-width: 700px; margin: 60px auto 30px; padding:60px; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.1); position: relative;z-index: 99}
 ul {margin: 0 0 0 15px; position: relative;}
 li {margin: 0 0 5px 0; font-size: 13px;}
 p {text-align: justify; font-size: 13px;}
@@ -57,7 +57,12 @@ a:hover {text-decoration:underline;}
 	left: 0;
 	top: 0;
 }
-
+canvas{
+	display: block;
+	background: transparent;
+	position: absolute;
+	top: 0;
+}
 #sticker {position: fixed; top: -60px; left: 0; right: 0; background: #fff; background: rgba(255,255,255,.98); height: 55px; box-shadow: 0 0 3px rgba(0,0,0,.3); z-index: 1000;}
 #sticker h2.sectionHead {border: none; margin: 0 0 0 50px; line-height: 55px; padding: 0 0 0 8px;}
 #sticker h2.sectionHead:before {left: -40px; top:5px;}

@@ -2,12 +2,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 	<link rel="shortcut icon" href=" ./images/favicon.ico" type="image/x-icon"/>
 	<title>个人主页</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
-<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+	<!--<link rel="stylesheet" href="./lib/lizi/css/normalize.css" type="text/css" media="screen"/>-->
+	<!--<link rel="stylesheet" href="./lib/lizi/css/default.css" type="text/css" media="screen"/>-->
+
 </head>
 <body>
 
@@ -153,17 +158,17 @@
 	<li class="bwWrapper"><img src="images/logos/tauve.png" alt="tauve" /><a href="https://tauve.com/" class="full-a"></a></li>
 	<li class="bwWrapper"><img src="images/logos/lanya.png" alt="lanya" /></li>
 	<li class="bwWrapper"><img src="images/logos/ladygood.png" alt="ladygood" /></li>
-	<!--<li class="bwWrapper"><img src="images/logos/designers_couch.png" alt="Designers Couch" /></li>-->
-	<!--<li class="bwWrapper"><img src="images/logos/dribbble.png" alt="Dribbble" /></li> -->
-	<!--<li class="bwWrapper"><img src="images/logos/design_shack.png" alt="Design Shack" /></li> -->
-	<!--<li class="bwWrapper"><img src="images/logos/envato_notes.png" alt="Envato Notes" /></li> -->
-	<!--<li class="bwWrapper"><img src="images/logos/qnt_gallery.png" alt="qnt gallery" /></li> -->
-	<!--<li class="bwWrapper"><img src="images/logos/specky_boy.png" alt="specky boy" /></li> -->
-	<!--<li class="bwWrapper"><img src="images/logos/themeforest.png" alt="ThemeForest" /></li> -->
-	<!--<li class="bwWrapper"><img src="images/logos/unmatchedstyle.png" alt="unmatchedstyle" /></li> -->
-	<!--<li class="bwWrapper"><img src="images/logos/webdepot.jpg" alt="Web Designer Depot" /></li> -->
-	<!--<li class="bwWrapper"><img src="images/logos/webmag.jpg" alt="Web Designer mag" /></li> -->
-	<!--<li class="bwWrapper"><img src="images/logos/wptv-logo.png" alt="WordPress TV" /></li>-->
+	<li class="bwWrapper"><img src="images/logos/designers_couch.png" alt="Designers Couch" /></li>
+	<li class="bwWrapper"><img src="images/logos/dribbble.png" alt="Dribbble" /></li>
+	<li class="bwWrapper"><img src="images/logos/design_shack.png" alt="Design Shack" /></li>
+	<li class="bwWrapper"><img src="images/logos/envato_notes.png" alt="Envato Notes" /></li>
+	<li class="bwWrapper"><img src="images/logos/qnt_gallery.png" alt="qnt gallery" /></li>
+	<li class="bwWrapper"><img src="images/logos/specky_boy.png" alt="specky boy" /></li>
+	<li class="bwWrapper"><img src="images/logos/themeforest.png" alt="ThemeForest" /></li>
+	<li class="bwWrapper"><img src="images/logos/unmatchedstyle.png" alt="unmatchedstyle" /></li>
+	<li class="bwWrapper"><img src="images/logos/webdepot.jpg" alt="Web Designer Depot" /></li>
+	<li class="bwWrapper"><img src="images/logos/webmag.jpg" alt="Web Designer mag" /></li>
+	<li class="bwWrapper"><img src="images/logos/wptv-logo.png" alt="WordPress TV" /></li>
 
 </ul><!--end seenOn-->
 <div>
@@ -235,10 +240,23 @@
 <div id="copyright">©2017 Shanshu | 沪ICP备17046132号-2</div>
 
 <!--SCRIPTS-->
+<script type="text/javascript" src="./lib/lizi/js/jquery-1.11.0.min.js"></script>
 <script src="js/jquery.js"></script>
 <script src="js/prettyPhoto.js"></script>
 <script src="js/backPosition.js"></script>
 <script src="js/custom.js"></script>
+
+<script type="text/javascript" src="./lib/lizi/js/jparticle.jquery.min.js"></script>
+<script>
+    $(function(){
+        var w = document.documentElement.clientWidth || document.body.clientWidth;
+        $("body").jParticle({
+            background: "transparent",
+            color: "rgba(0,0,0,0.5)",
+            particlesNumber:"150"
+        });
+    });
+</script>
 
 </body>
 </html>
