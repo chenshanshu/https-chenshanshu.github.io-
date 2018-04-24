@@ -42,6 +42,13 @@ a:hover {text-decoration:underline;}
 #backgroundImg {
 
 }
+.full-a{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
 
 #sticker {position: fixed; top: -60px; left: 0; right: 0; background: #fff; background: rgba(255,255,255,.98); height: 55px; box-shadow: 0 0 3px rgba(0,0,0,.3); z-index: 1000;}
 #sticker h2.sectionHead {border: none; margin: 0 0 0 50px; line-height: 55px; padding: 0 0 0 8px;}
