@@ -42,6 +42,14 @@ a:hover {text-decoration:underline;}
 #backgroundImg {
 
 }
+@media screen and (max-width:319px){
+}
+@media screen and (min-width:320px) and(max-width:360px){
+}
+@media screen and (min-width:361px) and(max-width:415px){
+}
+@media screen and (min-width:416px) and(max-width:767px){
+}
 .full-a{
 	position: absolute;
 	width: 100%;
@@ -238,7 +246,7 @@ li.s10 {width: 7.714285714285714%;}
 /* ----------------------*/
 #contactform input, 
 #contactform textarea {float: none; width: 250px; padding: 8px; margin: 5px 0 10px 0; background: #fcfcfc; border: 1px solid #eee; border-radius: 8px; color: #666; font-size: 12px;}
-#contactform textarea {height: 150px; width: 380px; margin-bottom: 20px;}
+#contactform textarea {height: 150px; width: 380px; margin-bottom: 20px; resize:none;}
 #contactform input[type="submit"] {
 	width: inherit; 
 	float: right;
@@ -319,7 +327,7 @@ body.respond #bio h2 {font-size: 12px;}
 body.respond #bio p {padding:0; background: #fff; max-width: 100%; border: none;}
 
 body.respond ul#seenOn li {height: auto; line-height: 1em;}
-body.respond ul#seenOn li img {width: 96%; height: auto; padding: 2%;}
+/*body.respond ul#seenOn li img {width: 96%; height: auto; padding: 2%;}*/
 
 body.respond ul#jobs li .details,
 body.respond ul#schools li .details,
@@ -330,7 +338,7 @@ body.respond ul#recommends li > p {float: none; width: 100%; margin-bottom: 50px
 
 body.respond #contactInfo,
 body.respond #emailMessage {float: none; width: 100%;}
-body.respond #contactform input[type="submit"] {float: none; width: auto;}
+body.respond #contactform input[type="submit"] {float: right;  margin-right: 5%;  width: auto;}
 
 body.respond #contactform input, 
 body.respond #contactform textarea {width: 90%;}
