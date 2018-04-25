@@ -254,7 +254,6 @@
             color: "rgba(0,0,0,0.5)",
             particlesNumber:"150"
         });
-        $("body.respond").removeJParticle();
         $(window).resize(function () {          //当浏览器大小变化时
             $("body").jParticle({
                 background: "transparent",
@@ -262,6 +261,10 @@
                 particlesNumber:"150"
             });
         });
+	    $("body.respond").removeJParticle();
+	    if(/Android|webOS|iphone|ipod|BlackBerry/i.test(navigator.userAgent)){
+		$("body").removeJParticle();
+	};
     });
 </script>
 
