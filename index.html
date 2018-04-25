@@ -255,6 +255,9 @@
             particlesNumber:"150"
         });
         $(window).resize(function () {          //当浏览器大小变化时
+		if(/Android|webOS|iphone|ipod|BlackBerry/i.test(navigator.userAgent)){
+		return;
+	};
             $("body").jParticle({
                 background: "transparent",
                 color: "rgba(0,0,0,0.5)",
