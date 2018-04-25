@@ -249,11 +249,18 @@
 <script type="text/javascript" src="./lib/lizi/js/jparticle.jquery.min.js"></script>
 <script>
     $(function(){
-        var w = document.documentElement.clientWidth || document.body.clientWidth;
         $("body").jParticle({
             background: "transparent",
             color: "rgba(0,0,0,0.5)",
             particlesNumber:"150"
+        });
+        $("body.respond").removeJParticle();
+        $(window).resize(function () {          //当浏览器大小变化时
+            $("body").jParticle({
+                background: "transparent",
+                color: "rgba(0,0,0,0.5)",
+                particlesNumber:"150"
+            });
         });
     });
 </script>
