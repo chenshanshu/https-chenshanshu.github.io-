@@ -247,29 +247,7 @@
 <script src="js/custom.js"></script>
 
 <script type="text/javascript" src="./lib/lizi/js/jparticle.jquery.min.js"></script>
-<script>
-    $(function(){
-        $("body").jParticle({
-            background: "transparent",
-            color: "rgba(0,0,0,0.5)",
-            particlesNumber:"150"
-        });
-        $(window).resize(function () {          //当浏览器大小变化时
-		if(/Android|webOS|iphone|ipod|BlackBerry/i.test(navigator.userAgent)){
-		return;
-	};
-            $("body").jParticle({
-                background: "transparent",
-                color: "rgba(0,0,0,0.5)",
-                particlesNumber:"150"
-            });
-        });
-	    $("body.respond").removeJParticle();
-	    if(/Android|webOS|iphone|ipod|BlackBerry/i.test(navigator.userAgent)){
-		$("body").removeJParticle();
-	};
-    });
-</script>
+<script type="text/javascript" src="./js/index.js"></script>
 
 </body>
 </html>
